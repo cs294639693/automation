@@ -2,7 +2,7 @@ package org.cs.project.testcase;
 
 import static org.junit.Assert.*;
 
-import org.cs.project.page.LoginPage;
+import org.cs.project.page.BaiduIndex;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -32,8 +32,14 @@ public class test001 {
 
 	@Test
 	public void test() {
-		LoginPage loginpage = new LoginPage("http://www.baidu.com");
+		BaiduIndex loginpage = new BaiduIndex("http://www.baidu.com");
 		// fail("Not yet implemented");
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		BaiduIndex loginPage = new BaiduIndex("http://www.baidu.com");
+
 	}
 
 }

@@ -1,6 +1,8 @@
 package org.cs.project.pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
@@ -11,6 +13,8 @@ public class Pages {
 		DesiredCapabilities capabilities = DesiredCapabilities.chrome();
 		WebDriver driver = new ChromeDriver(capabilities);
 		driver.get(URL);
+		WebElement web = driver.findElement(By.id("su"));
+		web.getText();
 	}
 
 	public static void main(String[] args) {
